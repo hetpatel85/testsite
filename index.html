@@ -14,7 +14,17 @@
 <canvas class="bg-canvas" id="bgCanvas"></canvas>
 <canvas id="confettiCanvas"></canvas>
 <canvas id="flowerCanvas"></canvas>
+
+<!-- Replace your-song.mp3 with your actual song file -->
 <audio id="bgAudio" src="song.mp3" loop preload="auto"></audio>
+
+<!-- ── MUSIC UNLOCK OVERLAY (shows on phone if autoplay blocked) ── -->
+<div id="musicOverlay">
+  <span class="mo-icon">🎵</span>
+  <p class="mo-title">Tap to open your surprise 🌹</p>
+  <p class="mo-sub">Turn your volume up, Diya.<br/>Something special is waiting for you...</p>
+  <button class="mo-btn" id="moBtn">Open with music 💕</button>
+</div>
 
 <!-- LIGHTBOX -->
 <div id="lightbox">
@@ -128,9 +138,7 @@
       <div class="hb-text" id="hbText"></div>
     </div>
 
-    <p class="music-hint" id="musicHint" style="display:none;">♪ Tap here to play our song ♪</p>
-
-  </div><!-- end bday-wrap -->
+  </div>
 
   <!-- ══ TIMELINE FOOTER ══ -->
   <div class="timeline-footer">
@@ -139,70 +147,62 @@
       <h2 class="tl-title">From the airport to forever</h2>
       <p class="tl-names">Het &amp; Diya &nbsp;✦&nbsp; Since December 2021</p>
     </div>
-
     <div class="tl-line-wrap">
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">✈️</span>
           <span class="tl-date">Dec 2021</span>
           <p class="tl-moment-title">The airport night</p>
           <p class="tl-moment-text">It all started at the airport on 15 December 2021. One look and nothing was ever the same again.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">🌸</span>
           <span class="tl-date">Early 2022</span>
           <p class="tl-moment-title">University days</p>
           <p class="tl-moment-text">Walking the same halls, sitting together — university became our favourite place because you were there.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">💬</span>
           <span class="tl-date">2022</span>
           <p class="tl-moment-title">Hey Batak!</p>
           <p class="tl-moment-text">The nickname that only I call you. Batak — silly, sweet, and completely yours. It still makes me smile every time.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">🏠</span>
           <span class="tl-date">2022–2023</span>
           <p class="tl-moment-title">Our little home</p>
           <p class="tl-moment-text">The place where we laughed the loudest, talked the longest, and felt the most at home — because we had each other.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">❤️</span>
           <span class="tl-date">Always</span>
           <p class="tl-moment-title">Every ordinary day</p>
           <p class="tl-moment-text">No big event needed. Just you, just me, just every simple moment that quietly became my whole world.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot"></div>
         <div class="tl-content">
           <span class="tl-emoji">🎂</span>
           <span class="tl-date">5 May 2025</span>
           <p class="tl-moment-title">Your 21st birthday</p>
           <p class="tl-moment-text">Today you turn 21, Diya. And I just want you to know — every single day with you has been my greatest gift.</p>
         </div>
-        <div class="tl-dot"></div>
-        <div class="tl-spacer"></div>
       </div>
     </div>
-
     <div class="tl-seal">
       <span class="tl-seal-heart">❤️</span>
       <p class="tl-seal-text">Every chapter of our story has been my favourite. Here is to many more, Batak. Happy 21st. 🌹</p>
@@ -210,7 +210,7 @@
     </div>
   </div>
 
-</div><!-- end birthdayScreen -->
+</div>
 
 <script src="script.js"></script>
 </body>
